@@ -1,7 +1,7 @@
 <html>
     <head><title>Room Selection Page</title>
     <link rel="shortcut icon" type="image/x-icon" href="picture/hotel.png" />
-    <link rel="stylesheet" type="text/css" href="style1.css" />
+    <link rel="stylesheet" type="text/css" href="css/style1.css" />
      <link  rel='stylesheet' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
         <style>
             .readmore {
@@ -71,6 +71,9 @@
                 justify-content: center;
                 padding:0 20px;
             }
+            span{
+                position:inherit;
+            }
         </style>
     </head>
     <body>
@@ -134,7 +137,7 @@ $sel="select * from $type[$x]";
     <center><h2>CLUB ROOM</h2></center>
     <p class="des">Facilities: Closet with hangers, 24 Hour room service,Computer and Internet access</p>
     <p class="des">Available:<?php  echo $count[0]; ?>/<?php  echo $total[0]; ?></p>
-    <p class="des"><span  style='font-size: 30px; '> 7600 rs /</span>  per night</p>
+    <p class="des"><span  style='font-size: 30px; '> 26000 Bdt /</span>  per night</p>
      <input class="readmore" type='submit' name='club' value='BOOK NOW'/>
         </form>
   
@@ -144,7 +147,7 @@ $sel="select * from $type[$x]";
     <center><h2>CLASSIC ROOM</h2></center>
     <p class="des">Facilities: Closet with hangers, HD flat-screen TV, Telephone</p>
     <p class="des">Available:<?php  echo $count[1]; ?>/<?php  echo $total[1]; ?></p>
-        <p class="des"><span  style='font-size: 30px; '> 4500 rs /</span>  per night</p>
+        <p class="des"><span  style='font-size: 30px; '> 4500 bdt /</span>  per night</p>
           <input class="readmore" type='submit' name='classic' value='BOOK NOW'/>
         </form>
     </div>
@@ -153,7 +156,7 @@ $sel="select * from $type[$x]";
     <center><h2>SUPERIOR ROOM</h2></center>
     <p class="des">Facilities:  Computer and Internet access,HD flat-screen TV, Telephone</p>
     <p class="des">Available:<?php  echo $count[2]; ?>/<?php  echo $total[2]; ?></p>
-        <p class="des"><span  style='font-size: 30px; '> 5000 rs /</span>  per night</p>
+        <p class="des"><span  style='font-size: 30px; '> 5000 bdt /</span>  per night</p>
           <input class="readmore" type='submit' name='superior' value='BOOK NOW'/>
         </form>
     </div>
@@ -164,7 +167,7 @@ $sel="select * from $type[$x]";
     <center><h2>FAMILY ROOM</h2></center>
    <p class="des">Facilities:32 Inch flat screen TV, Kitchen facilities,Towels,Dining tables</p>
    <p class="des">Available:<?php  echo $count[3]; ?>/<?php  echo $total[3]; ?></p>
-        <p class="des"><span  style='font-size: 30px; '> 7800 rs /</span>  per night</p>
+        <p class="des"><span  style='font-size: 30px; '> 7800 bdt /</span>  per night</p>
           <input class="readmore" type='submit' name='family' value='BOOK NOW'/>
         </form>
     </div>

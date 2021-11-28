@@ -22,6 +22,6 @@ else{
     $insert="insert into signup (username,password,email,phoneno) values('$username','$password','$email','$phoneno') " ;
     mysqli_query($con,$insert)or die('can not');
     echo("<script>alert('Registered Successfully!');
-          window.location.href = 'login.html';</script>");
+          window.location.href = 'login.php';</script>");
   
 }

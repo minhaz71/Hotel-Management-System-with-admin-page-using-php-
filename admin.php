@@ -4,7 +4,7 @@
     <head>
     <title>Admin Page</title>
     <link rel="shortcut icon" type="image/x-icon" href="picture/hotel.png" />
-    <link rel="stylesheet" type="text/css" href="style1.css" />
+    <link rel="stylesheet" type="text/css" href="css/style1.css" />
     <link  rel='stylesheet' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
 
     <style>
@@ -172,7 +172,7 @@
     </div>
     <script>
     function logout(){
-    location.href = "admin.html";
+    location.href = "adminlogin.php";
 
     }
 

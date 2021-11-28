@@ -1,10 +1,16 @@
+<?php
+session_start();
+?>
 <html>
 
     <head>
         <title>Event Page</title>
         <link rel="shortcut icon" type="image/x-icon" href="picture/hotel.png" />
     <link rel="stylesheet" type="text/css" href="style1.css" />
-     <link  rel='stylesheet' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+     <link  rel='stylesheet' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>    
+        <link  rel='stylesheet' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+                <link rel='stylesheet' href='css/style.css'> 
+                <link rel='stylesheet' href='css/style1.css'> 
     </head>
     <style>
         
@@ -77,18 +83,55 @@
 
     <body> 
 
-     <div id='navbar' class='home-body-nav'  >
-     <a id="logout" href="javascript:goBack()" ><i class="fa fa-chevron-left" aria-hidden="true"></i>&nbsp;Back</a>
-     
-<script>
-function goBack() {
-  window.history.back();
-}
-</script>
+    <section class="tall">
+    <nav class="jmenu">
+    <label for="menu-btn" class="jm-menu-btn jm-icon-menu"></label>
+      <input type="checkbox" id="menu-btn" class="jm-menu-btn">
+      <ul class="jm-collapse">
+<div id='navbar' class='home-body-nav top'>
+<li> <a id="first" href="home1.php"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;Home</a></li>
+<li><a href="aboutus.php">About</a></li>
+<li> <a href="gallery.html">Gallery</a></li>
+<li>  <a href="service.html">Service</a></li>
+<li> <a href="room.php">Rooms</a></li>
+<li> <a href="event.php">Events</a></li>
+<li> <a href="service.html">Service</a></li>
+<li> <a href="contact.html">Contact</a></li>
+<li><a href="appointment.php#room">Booking History</a></li>
+<li> <a href="event.php">Meetings & Events</a></li>
+<li> <a href="contact.html">Contact</a></li>
+<?php 
 
-     </div>
+if(isset($_SESSION["username"])){
+  $name = $_SESSION["username"];
+}
+else{
+  $name="Not Logged in";
+}   
+if(isset($_SESSION["username"])){
+          echo "<li><a style='float:right' id=\"logout\" href=\"logout.php\"><i class=\"fa fa-sign-out\"
+          aria-hidden=\"true\"></i>&nbsp;logout</a></li>";
+          
+        }
+        else{
+          echo "<li><a href=\"login.php\">Login</a></li>";
+          echo"<li><a href=\"sign-up.html\">Sign up</a></li>";
+        }  
+?>
+    
+    <li>  <p style=' float:right;
+     color: #f2f2f2;
+     text-align: center;
+     margin-right: 20px;
+     font-size:18px;'><i class="fa fa-user-circle" aria-hidden="true"></i> <?php echo $name;?></p> <li>
+
+</div>
+
+</ul>
+    </nav>
+  </section>
         
-            <h1 style=" font-family:Arial, Helvetica, sans-serif; color:#2d545e;">   &nbsp;&nbsp;&nbsp; <i class="fa fa-building" aria-hidden="true"></i>&nbsp;The Pasific Hotel,luxury collections ,chennai</h1><br>
+            <h1 style=" font-family:Arial, Helvetica, sans-serif; color:#2d545e;">   &nbsp;&nbsp;&nbsp; <i class="fa fa-building" aria-hidden="true"></i>&nbsp;The Pasific Hotel,luxury collections ,Dhaka</h1><br>
             <center><h2 STYLE=' color:#2d545e;'> MEETINGS & EVENTS </h2></center> <br> 
                     <div class='intro'> 
                     <p>
@@ -134,13 +177,15 @@ function goBack() {
             </div><div class='in-in'><a href=""><p>Restaurant</p></a>
             </div>
             </div> <div class='in'>
-            <div class='in-in'><a href=""><p>Address:No. 63, Mount Road, Guindy,<br>
-            Chennai- 600032<br>
-            Tamil Nadu, India<br><br>
-            </p></a>
-            </div><div class='in-in'><a href=""><p>Telephone Number: +9544 3220 0000</p></a>
-            </div><div class='in-in'><a href=""><p>Email Id: pasific@itc.in</p></a>
-            </div><div class='in-in'><a href="login.html"><p>Rooms</p></a>
+            <div class='in-in'><a href=""><p>Address:No. 105/1 DHanmondi,<br>
+                    Dhaka-120<br>
+                    Bangladesh<br><br>
+                    </p></a>
+                    </div><div class='in-in'><a href=""><p>Telephone Number: +880 1850887496</p></a>
+                    </div><div class='in-in'><a href=""><p>Email Id: pasific@gmail.com</p></a>
+                   
+            </div>
+            </div>
             </div>
             </div>
             <div class='in'>

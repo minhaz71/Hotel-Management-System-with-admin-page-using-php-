@@ -7,10 +7,13 @@ if(isset( $_POST['message']))
 $message = $_POST['message'];
 if(isset( $_POST['sub']))
 $subject = $_POST['sub'];
+
 if ($name ===''){
 echo "Name cannot be empty.";
 die();
 }
+
+
 if ($email === ''){
 echo "Email cannot be empty.";
 die();

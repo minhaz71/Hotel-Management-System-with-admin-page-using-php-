@@ -1,11 +1,26 @@
+<?php
+session_start();
+?>
+<?php
+
+if(isset($_SESSION["username"])){
+          echo "";
+          
+        }
+        else{
+            header("Location:login.php?r=1");
+        }  
+?>
 <html>
     <head>
     <title>Booking History</title>
         <link rel="shortcut icon" type="image/x-icon" href="picture/hotel.png" />
-         <link rel="stylesheet" type="text/css" href="style1.css" />
+       
          <link  rel='stylesheet' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+         <link rel="stylesheet" type="text/css" href="css/style1.css" />
+         <link rel="stylesheet" type="text/css" href="css/style.css" />
          <style>
-        *{
+ *{
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -106,7 +121,6 @@ div:target { display:block; }
  
 <div class="navbar">
      <?php
-        session_start();
         $name = $_SESSION["username"];
         ?>
     

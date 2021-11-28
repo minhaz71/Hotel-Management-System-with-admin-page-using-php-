@@ -15,7 +15,7 @@ require('fpdf/fpdf.php');
 $pdf = new FPDF();
 $pdf->AddPage();
     
-       $pdf->SetFont("Arial","B",16);
+        $pdf->SetFont('Arial','B',16);
 		$pdf->SetFont('Arial','B',30);
 		$pdf->Cell(200,5,"THE PASIFIC HOTEL ",0,0,'C');
 		$pdf->Ln(15);

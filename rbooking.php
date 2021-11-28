@@ -5,7 +5,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="picture/hotel.png" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel='stylesheet' href="style1.css">
+    <link rel='stylesheet' href="css/style1.css">
     <style>
         
         
@@ -21,12 +21,12 @@
             
         }
         .box{
-            width:550px;
-            height:1700px;
+            width:80%;
+            height:1800px;
             position:relative;
             position: absolute;   
             top:3%;
-            left:55%;
+            left:11%;
            box-sizing: border-box;
             margin:6% auto;
             background: white;
@@ -55,7 +55,7 @@
             display:block;
             outline:none;
             border:0;
-            background-color:lightblue;
+            /* background-color:lightblue; */
             font-size: 18px;
             border-radius: 30px;
             cursor: pointer;

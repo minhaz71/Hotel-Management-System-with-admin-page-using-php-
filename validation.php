@@ -13,14 +13,20 @@ if(($row['username']==$username) && ($row['password']==$password))
     $_SESSION['username']=$username;
     $_SESSION['password']=$password;
     $_SESSION['ID']=$row['ID'];
-   
+    if(isset($_GET['r'])){
+
+        echo"<script>alert('Login Successfully!');
+        window.location.href = 'appointment.php#room';</script>";
+    }
+    else{
     echo("<script>alert('Login Successfully!');
           window.location.href = 'home1.php';</script>");
+    }
         
 //    header('location:home1.php');
 }
 else{
 	echo("<script>alert('Invalid Username or Password. Try Again!');
-          window.location.href = 'login.html';</script>");
+          window.location.href = 'login.php';</script>");
 } 
 
